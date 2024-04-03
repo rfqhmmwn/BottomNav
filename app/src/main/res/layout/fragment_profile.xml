@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD8E6"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Foto Profil -->
+
+    <!-- Email -->
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/boy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama : Rifqi wibisono himmawan"
+        android:textSize="18sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageViewProfile"
+        app:layout_constraintStart_toStartOf="@id/imageViewProfile"
+        app:layout_constraintEnd_toEndOf="@id/imageViewProfile"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Nomor Telepon -->
+    <TextView
+        android:id="@+id/textViewPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelas : 10 PPLG 1"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewEmail"
+        app:layout_constraintStart_toStartOf="@id/textViewEmail"
+        app:layout_constraintEnd_toEndOf="@id/textViewEmail"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Media Sosial -->
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewPhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/textViewPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@id/textViewPhoneNumber"
+        app:layout_constraintVertical_bias="0.014">
+
+        <!-- Ikon Media Sosial -->
+        <ImageView
+            android:id="@+id/imageViewFacebook"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/imageViewTwitter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/imageViewInstagram"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/instagram" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

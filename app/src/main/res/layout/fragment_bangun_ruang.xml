@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD8E6">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:text="BANGUN RUANG"
+        android:textSize="30dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Kubus"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/cubes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/Balok"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/cube"
+        app:layout_constraintBottom_toBottomOf="@+id/Kubus"
+        app:layout_constraintStart_toEndOf="@+id/Kubus"
+        app:layout_constraintTop_toTopOf="@+id/Kubus" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="kubus"
+        android:textSize="25dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Kubus"
+        app:layout_constraintStart_toStartOf="@+id/Kubus"
+        app:layout_constraintTop_toBottomOf="@+id/Kubus" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="balok"
+        android:textSize="25dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/Balok"
+        app:layout_constraintTop_toBottomOf="@+id/Balok" />
+
+    <ImageView
+        android:id="@+id/LSegitiga"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cone"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/Bola"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ball"
+        app:layout_constraintBottom_toBottomOf="@+id/LSegitiga"
+        app:layout_constraintEnd_toEndOf="@+id/Balok"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="limas segitiga"
+        android:textSize="25dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/LSegitiga"
+        app:layout_constraintTop_toBottomOf="@+id/LSegitiga" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="bola"
+        android:textSize="25dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Bola"
+        app:layout_constraintStart_toStartOf="@+id/Bola"
+        app:layout_constraintTop_toBottomOf="@+id/Bola" />
+
+    <ImageView
+        android:id="@+id/PSegitiga"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/prism"
+        app:layout_constraintEnd_toEndOf="@+id/Bola"
+        app:layout_constraintStart_toStartOf="@+id/LSegitiga"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:text="prisma segitiga"
+        android:textSize="25dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/PSegitiga"
+        app:layout_constraintStart_toStartOf="@+id/PSegitiga"
+        app:layout_constraintTop_toBottomOf="@+id/PSegitiga" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
